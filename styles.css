@@ -32,6 +32,11 @@ body {
   max-width: 410px;
   border-radius: 7px;
   padding: 16px 25px;
+  transition: height 0.2s ease;
+}
+
+.wrapper.active {
+  height: 550px;
 }
 
 header h1 {
@@ -46,7 +51,7 @@ header p {
 }
 
 .wrapper .form {
-  margin: 20px 0 30px;
+  margin: 20px 0 25px;
 }
 
 .form :where(input, button) {
@@ -81,4 +86,10 @@ header p {
   border: 1px solid #ccc;
   opacity: 0;
   pointer-events: none;
+}
+
+.wrapper.active .qr-code {
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s 0.5s ease;
 }
