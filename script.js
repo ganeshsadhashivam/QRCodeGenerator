@@ -17,7 +17,6 @@ generateBtn.addEventListener("click", () => {
     wrapper.classList.add("active");
     generateBtn.innerText = "Generating QR Code";
   });
-  console.log(qrValue);
 });
 
 qrInput.addEventListener("keyup", () => {
